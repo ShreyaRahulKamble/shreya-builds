@@ -239,7 +239,7 @@ function App() {
       <a className="skip-link" href="#main">Skip to content</a>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Shreya Builds home" onClick={closeMenu}>
-          <img src="/logo.png" alt="" width="48" height="48" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" width="48" height="48" />
           <span>SHREYA<br />BUILDS</span>
         </a>
         <button
@@ -281,7 +281,7 @@ function App() {
               aria-hidden="true"
               onError={() => setVideoUnavailable(true)}
             >
-              <source src="/3d-motion.mp4" type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}3d-motion.mp4`} type="video/mp4" />
             </video>
           )}
           <div className="hero-video-wash" aria-hidden="true" />
@@ -408,7 +408,7 @@ function App() {
           <div className="about-mark" data-reveal aria-hidden="true">
             <div className="about-orbit about-orbit--one" />
             <div className="about-orbit about-orbit--two" />
-            <img src="/logo.png" alt="" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" loading="lazy" />
             <span>SB / 01</span>
           </div>
           <div className="about-copy" data-reveal>
@@ -452,7 +452,7 @@ function App() {
 
       <footer className="site-footer">
         <a className="footer-brand" href="#home">
-          <img src="/logo.png" alt="" width="34" height="34" loading="lazy" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" width="34" height="34" loading="lazy" />
           <span>SHREYA BUILDS</span>
         </a>
         <div className="footer-links" aria-label="Contact information">
